@@ -1,6 +1,6 @@
-#include <conio.h>			   //Librería que se usará para la función getche()
-#include <stdio.h>			  //Librería que se usará para la función, puts, scanf, etc
-#include <windows.h>		//Librería que se usará para la función Sleep (Milisegundos)
+#include <conio.h>			   //LibrerÃ­a que se usarÃ¡ para la funciÃ³n getche()
+#include <stdio.h>			  //LibrerÃ­a que se usarÃ¡ para la funciÃ³n, puts, scanf, etc
+#include <windows.h>
 
 /*
 * Contador con For
@@ -18,7 +18,7 @@ main()
 	{																		
 		printf("\n%d <---", x);										   	   
 	}																  	  
-	if(y<=0)			//Si se ingresa un número negativo, marcará error y volverá al inicio del programa											 	 
+	if(y<=0)			//Si se ingresa un nÃºmero negativo, marcarÃ¡ error y volverÃ¡ al inicio del programa											 	 
 	{																	
 		puts("Error ingrese un numero positivo y vuelva a intentar");  
 		getche();
