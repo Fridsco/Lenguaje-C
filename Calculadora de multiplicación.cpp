@@ -12,7 +12,7 @@ int main()
 	printf("\nIngrese un segundo dato: ");				 	
 	scanf("%d", &y);
 	z=x*y;
-	printf("\nEl resultado de la multiplicación es: %d", z);
+	printf("\nEl resultado de la multiplicaciÃ³n es: %d", z);
 	getche();
 	goto Inicio;
 }
