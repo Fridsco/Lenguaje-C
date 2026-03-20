@@ -45,4 +45,12 @@ Como medida correctiva, se ha procedido a la creación de un **Módulo Unificado
 * **Optimización de Scope:** Se recomienda la declaración de iteradores dentro del ámbito del ciclo (`inline scope`) para optimizar el uso de memoria en el stack.
 * **Veredicto:** El ciclo `for` se establece como el estándar para iteraciones con límites definidos, mientras que el `do-while` se reserva para procesos que requieren una ejecución inicial obligatoria (ej. menús de usuario).
 
+---
+
+### 6. Estructura de Datos: Pila Estática (`pila.c`)
+* **Vulnerabilidad Crítica:** Gestión de índices de arreglo sin validación en las funciones `push` y `pop`.
+* **Riesgo:** Desbordamiento de búfer (*Buffer Overflow*) al exceder el límite `max`, permitiendo la corrupción de direcciones de memoria adyacentes.
+* **Problema de Portabilidad:** Dependencia de códigos ASCII manuales para caracteres extendidos, incompatibles con terminales modernas (UTF-8).
+* **Solución:** Implementación de funciones con retorno booleano para validar el estado de la estructura antes de operar, garantizando la integridad de la memoria.
+
 *"El código del pasado es el mapa de aprendizaje para el ingeniero del futuro."*
