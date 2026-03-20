@@ -20,7 +20,7 @@ Tras una revisión exhaustiva de los algoritmos iniciales (2020-2022), se identi
 ### 1. Casos: Generación de Abecedarios (`abecedario.c` / `abecedario_min.c`)
 * **Fallo de Lógica:** Inclusión de variables (`ABC`/`abc`) que no participan en el flujo de datos principal.
 * **Impacto:** Consumo innecesario de memoria y baja eficiencia de procesamiento.
-* **Solución Stark:** Reemplazo de `getche()` por `getchar()` de la librería estándar `<stdio.h>` y transición a literales de carácter (`'A' - 'Z'`) para permitir que el compilador gestione el valor numérico automáticamente.
+* **Solución:** Reemplazo de `getche()` por `getchar()` de la librería estándar `<stdio.h>` y transición a literales de carácter (`'A' - 'Z'`) para permitir que el compilador gestione el valor numérico automáticamente.
 
 ---
 
@@ -36,7 +36,7 @@ Como medida correctiva, se ha procedido a la creación de un **Módulo Unificado
 * **Impacto:** Esta práctica genera lo que en ingeniería se conoce como **"Spaghetti Code"**, rompiendo la jerarquía de la programación estructurada y dificultando la depuración y escalabilidad del software.
 * **Problema de Portabilidad:** Inclusión de `system("cls")`. Esta función suspende el proceso actual para llamar a un comando del sistema operativo (CMD de Windows), lo cual es ineficiente y provoca fallos de ejecución en entornos no-Windows como **Wii IOS** o **Linux**.
 * **Dependencias Innecesarias:** Inclusión de `<windows.h>` sin uso de funciones de la API de Windows, aumentando el tiempo de compilación y el peso del binario final.
-* **Solución Stark:** Implementación de estructuras de control cíclicas estándar (`do-while`) y validación de entrada de datos mediante el valor de retorno de `scanf`. Se sustituyen los comandos de sistema por saltos de línea (`\n`) para garantizar una ejecución multiplataforma.
+* **Solución:** Implementación de estructuras de control cíclicas estándar (`do-while`) y validación de entrada de datos mediante el valor de retorno de `scanf`. Se sustituyen los comandos de sistema por saltos de línea (`\n`) para garantizar una ejecución multiplataforma.
 
 ---
 
