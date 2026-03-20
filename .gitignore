@@ -50,3 +50,20 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# --- Archivos Compilados (Basura de C) ---
+*.exe
+*.o
+*.out
+
+# --- Seguridad (¡Altamente Secreto!) ---
+secret_key.txt
+semilla_maestra.b32
+*.env
+
+# --- Basura de Sistema ---
+Thumbs.db
+.DS_Store
+
+# --- Temporales de VS Code ---
+.vscode/
