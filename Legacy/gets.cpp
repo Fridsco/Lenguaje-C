@@ -1,7 +1,7 @@
 #include <conio.h>
 #include <stdio.h>
 /*
-* Ejemplo de la función gets en C
+* Ejemplo de la funciÃ³n gets en C
 * Fridsco
 */
 main()
