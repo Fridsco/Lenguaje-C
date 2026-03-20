@@ -29,4 +29,15 @@ Los códigos analizados cumplen su función lógica básica, pero presentan una 
 
 Como medida correctiva, se ha procedido a la creación de un **Módulo Unificado** (`alphabet_generator.c`) en la raíz del repositorio, el cual implementa programación modular para solventar estas deficiencias.
 
+---
+
+### 2. Caso: Multiplicación con Salto (`multiplicacion.c`)
+* **Fallo de Flujo de Control:** Uso de la instrucción `goto` para crear un bucle de repetición infinito hacia la etiqueta `Inicio`.
+* **Impacto:** Esta práctica genera lo que en ingeniería se conoce como **"Spaghetti Code"**, rompiendo la jerarquía de la programación estructurada y dificultando la depuración y escalabilidad del software.
+* **Problema de Portabilidad:** Inclusión de `system("cls")`. Esta función suspende el proceso actual para llamar a un comando del sistema operativo (CMD de Windows), lo cual es ineficiente y provoca fallos de ejecución en entornos no-Windows como **Wii IOS** o **Linux**.
+* **Dependencias Innecesarias:** Inclusión de `<windows.h>` sin uso de funciones de la API de Windows, aumentando el tiempo de compilación y el peso del binario final.
+* **Solución Stark:** Implementación de estructuras de control cíclicas estándar (`do-while`) y validación de entrada de datos mediante el valor de retorno de `scanf`. Se sustituyen los comandos de sistema por saltos de línea (`\n`) para garantizar una ejecución multiplataforma.
+
+---
+
 *"El código del pasado es el mapa de aprendizaje para el ingeniero del futuro."*
