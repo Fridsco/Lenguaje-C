@@ -24,4 +24,4 @@ Tras una revisión exhaustiva de los algoritmos iniciales (2020-2022), se identi
 ---
 
 ## Veredicto de Ingeniería
-Estos códigos representan los cimientos de la lógica de programación del laboratorio. Se conservan para documentar el progreso técnico, pero se recomienda el uso de las **Versiones 2.0 (Optimized)** para cualquier despliegue en hardware actual.
+Estos códigos representan los cimientos de la lógica de programación. Se conservan para documentar el progreso técnico, pero se recomienda el uso de las **Versiones 2.0 (Optimized)** para cualquier despliegue en hardware actual.
