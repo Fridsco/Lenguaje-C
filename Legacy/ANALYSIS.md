@@ -63,3 +63,4 @@ Como medida correctiva, se ha procedido a la creación de un **Módulo Unificado
 ---
 
 *"El código del pasado es el mapa de aprendizaje para el ingeniero del futuro."*
+*"No nos definen nuestros errores, sino lo que hacemos para refactorizarlos." — Filosofía de Ingeniería.*
