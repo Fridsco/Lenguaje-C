@@ -52,5 +52,14 @@ Como medida correctiva, se ha procedido a la creación de un **Módulo Unificado
 * **Riesgo:** Desbordamiento de búfer (*Buffer Overflow*) al exceder el límite `max`, permitiendo la corrupción de direcciones de memoria adyacentes.
 * **Problema de Portabilidad:** Dependencia de códigos ASCII manuales para caracteres extendidos, incompatibles con terminales modernas (UTF-8).
 * **Solución:** Implementación de funciones con retorno booleano para validar el estado de la estructura antes de operar, garantizando la integridad de la memoria.
+---
+
+### 7. Proyecto: Tablas de Multiplicar con GUI (`tablas.c`)
+* **Fallo de Portabilidad:** Uso de `MessageBox` de la API `windows.h`. 
+* **Impacto:** El código está "atado" a la plataforma Windows, impidiendo su compilación en sistemas embebidos o servidores Linux/Unix.
+* **Inestabilidad Estructural:** Uso persistente de `goto Inicio` para el control de flujo.
+* **Solución:** Abstracción de la lógica de generación de tablas en una función independiente (`generate_table`) y migración a un bucle `while` controlado por el usuario, eliminando llamadas costosas al sistema (`system("pause")`).
+
+---
 
 *"El código del pasado es el mapa de aprendizaje para el ingeniero del futuro."*
