@@ -40,4 +40,9 @@ Como medida correctiva, se ha procedido a la creación de un **Módulo Unificado
 
 ---
 
+### 3. Comparativa: Contadores Iterativos (`contador_for.c` vs `contador_do_while.c`)
+* **Análisis de Comportamiento:** Se identificó que el uso de `do-while` en contadores dependientes de entrada de usuario es propenso a errores de lógica, ya que garantiza al menos una ejecución aunque el límite sea menor al inicio.
+* **Optimización de Scope:** Se recomienda la declaración de iteradores dentro del ámbito del ciclo (`inline scope`) para optimizar el uso de memoria en el stack.
+* **Veredicto:** El ciclo `for` se establece como el estándar para iteraciones con límites definidos, mientras que el `do-while` se reserva para procesos que requieren una ejecución inicial obligatoria (ej. menús de usuario).
+
 *"El código del pasado es el mapa de aprendizaje para el ingeniero del futuro."*
