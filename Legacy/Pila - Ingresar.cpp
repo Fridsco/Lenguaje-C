@@ -3,7 +3,7 @@
 #include <windows.h>
 
 /* 
-*	El siguiente código es de una pila, se puede ingresar datos, sacar, y ver el tamaño de la pila
+*	El siguiente cÃ³digo es de una pila, se puede ingresar datos, sacar, y ver el tamaÃ±o de la pila
 * 	Fridsco
 */
 char Enie = 164;
